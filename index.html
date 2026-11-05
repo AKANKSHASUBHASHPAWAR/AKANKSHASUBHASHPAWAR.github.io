@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akanksha Pawar's portfolio — Data Analytics, Power BI, Python, and AI/ML projects." />
+  <title>Akanksha Pawar | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111b2e;
+      --panel-light: #17243a;
+      --text: #edf3ff;
+      --muted: #a9b8cf;
+      --accent: #77aaff;
+      --border: #263750;
+      --green: #7ce0bd;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+    .container { width: min(1080px, 90%); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11, 17, 32, .92);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+    nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { font-weight: 800; letter-spacing: .3px; }
+    .nav-links { display: flex; gap: 22px; color: var(--muted); font-size: .94rem; }
+
+    .hero { padding: 90px 0 70px; }
+    .eyebrow {
+      color: var(--green);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .78rem;
+    }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); line-height: 1.08; margin: 14px 0; }
+    .hero h2 { color: var(--accent); font-size: clamp(1.15rem, 3vw, 1.65rem); margin: 0 0 18px; }
+    .hero p { max-width: 680px; color: var(--muted); font-size: 1.08rem; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--panel-light);
+      font-weight: 700;
+    }
+    .button.primary { background: var(--accent); color: #081326; border-color: var(--accent); }
+
+    section { padding: 56px 0; }
+    .section-heading { margin-bottom: 24px; }
+    .section-heading h2 { font-size: 1.9rem; margin: 0 0 6px; }
+    .section-heading p { color: var(--muted); margin: 0; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill {
+      padding: 8px 13px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: #dbe8ff;
+      font-size: .92rem;
+    }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+    .card p { margin: 0 0 18px; color: var(--muted); }
+    .tags { color: var(--green); font-size: .84rem; margin-bottom: 18px; }
+    .card-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: auto; font-weight: 700; color: var(--accent); }
+    .about-box {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      color: var(--muted);
+    }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 18px; }
+    footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); text-align: center; font-size: .9rem; }
+
+    @media (max-width: 680px) {
+      .nav-links { gap: 12px; font-size: .82rem; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 64px 0 48px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#home">AKANKSHA PAWAR</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="eyebrow">Data Analytics · AI · Machine Learning</div>
+      <h1>Hello, I'm Akanksha.</h1>
+      <h2>Aspiring Data Analyst</h2>
+      <p>
+        I'm a 2026 Computer Science Engineering graduate who enjoys turning data
+        into meaningful insights through analysis, dashboards, and practical projects.
+        I'm looking for entry-level Data Analyst opportunities across India.
+      </p>
+      <div class="buttons">
+        <a class="button primary" href="#projects">Explore My Projects</a>
+        <a class="button" href="https://linkedin.com/in/akanksha-pawar-988621261" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="container" id="projects">
+      <div class="section-heading">
+        <h2>Featured Projects</h2>
+        <p>Dashboards and applications I've built and published.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Job Market Analysis</h3>
+          <p>A Power BI dashboard exploring job-market data and trends.</p>
+          <div class="tags">Power BI · Data Visualization</div>
+          <div class="card-links">
+            <a href="https://github.com/AKANKSHASUBHASHPAWAR/job-market-analysis" target="_blank" rel="noopener">View Project →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>HR Analytics Dashboard</h3>
+          <p>A dashboard for exploring HR metrics and workforce insights.</p>
+          <div class="tags">Power BI · Analytics</div>
+          <div class="card-links">
+            <a href="https://github.com/AKANKSHASUBHASHPAWAR/hr-analysis" target="_blank" rel="noopener">View Project →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Banking Analysis</h3>
+          <p>A Power BI dashboard focused on banking data and analysis.</p>
+          <div class="tags">Power BI · Data Analysis</div>
+          <div class="card-links">
+            <a href="https://github.com/AKANKSHASUBHASHPAWAR/banking-analysis" target="_blank" rel="noopener">View Project →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Chocolate Sales Dashboard</h3>
+          <p>A dashboard to explore chocolate sales data and performance.</p>
+          <div class="tags">Power BI · Sales Analytics</div>
+          <div class="card-links">
+            <a href="https://github.com/AKANKSHASUBHASHPAWAR/chocolate-sales-dashboard" target="_blank" rel="noopener">View Project →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Healthcare Analysis</h3>
+          <p>A Power BI dashboard for exploring healthcare data.</p>
+          <div class="tags">Power BI · Data Visualization</div>
+          <div class="card-links">
+            <a href="https://github.com/AKANKSHASUBHASHPAWAR/healthcare-analysis-dashboard" target="_blank" rel="noopener">View Project →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Car Engine Health Monitoring</h3>
+          <p>A machine-learning application that predicts engine condition from input parameters.</p>
+          <div class="tags">Python · Flask · Machine Learning</div>
+          <div class="card-links">
+            <a href="https://car-engine-health-1.onrender.com/" target="_blank" rel="noopener">Live Demo →</a>
+            <a href="https://github.com/AKANKSHASUBHASHPAWAR/car-engine-health" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Product Image Classifier</h3>
+          <p>A web application that classifies product images using a CNN model.</p>
+          <div class="tags">Python · TensorFlow · Streamlit</div>
+          <div class="card-links">
+            <a href="https://image-classifier-c5kulc7l5xj8etf6easyss.streamlit.app/" target="_blank" rel="noopener">Live Demo →</a>
+            <a href="https://github.com/AKANKSHASUBHASHPAWAR/product-image-classifier" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>AI Resume Analyzer — CareerAI Pro</h3>
+          <p>An AI-powered application for resume analysis, ATS matching, and interview preparation.</p>
+          <div class="tags">Python · Streamlit · Gemini API</div>
+          <div class="card-links">
+            <a href="https://ai-resume-interview-coach-1013.streamlit.app/" target="_blank" rel="noopener">Live Demo →</a>
+            <a href="https://github.com/AKANKSHASUBHASHPAWAR/AI-Resume-Interview-Coach" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="skills">
+      <div class="section-heading">
+        <h2>Technical Skills</h2>
+        <p>Tools and technologies I use in my projects.</p>
+      </div>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">SQL / MySQL</span>
+        <span class="skill">Excel</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">NumPy</span>
+        <span class="skill">EDA</span>
+        <span class="skill">Matplotlib</span>
+        <span class="skill">Scikit-learn</span>
+        <span class="skill">TensorFlow</span>
+        <span class="skill">Streamlit</span>
+        <span class="skill">GitHub</span>
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <div class="section-heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-box">
+        I completed my B.E. in Computer Science Engineering in 2026 with a CGPA
+        of 8.00. I have built Power BI dashboards and Python-based applications
+        as part of my learning and project work. I am eager to grow as a Data
+        Analyst, contribute to a team, and keep improving my analytical skills.
+      </div>
+    </section>
+
+    <section class="container" id="contact">
+      <div class="section-heading">
+        <h2>Let's Connect</h2>
+        <p>I'm open to entry-level Data Analyst opportunities.</p>
+      </div>
+      <div class="contact-links">
+        <a class="button primary" href="mailto:akankshaapawar10@gmail.com">Email Me</a>
+        <a class="button" href="https://linkedin.com/in/akanksha-pawar-988621261" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button" href="https://github.com/AKANKSHASUBHASHPAWAR" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Akanksha Pawar · Built with HTML and CSS</div>
+  </footer>
+</body>
+</html>
